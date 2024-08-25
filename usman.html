@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar Menu</title>
+    <style>
+        body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.sidebar {
+    width: 300px;
+    height: 100vh;
+    background-color: #333537;
+    color: white;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.sidebar-header {
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-header i {
+    margin-right: 0px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.sidebar-header h2 {
+    margin: 10px;
+}
+
+.sidebar-menu {
+    list-style-type: none;
+    padding: 0px;
+    margin: 20px 0;
+}
+
+.sidebar-menu li {
+    margin: 15px 0;
+}
+
+.sidebar-menu a {
+    color: rgb(232, 224, 224);
+    text-decoration: none;
+    display: flex;
+    padding: 15px;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.sidebar-menu a:hover {
+    background-color: #626567;
+}
+
+.sidebar-menu i {
+    margin-right: 10px;
+}
+
+.sidebar-footer {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.sidebar-footer a {
+    color: white;
+    font-size: 25px;
+    padding: 2px;
+}
+
+.content {
+    margin-left: 250px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <button><i class="fas fa-bars"></i></button>
+            <h2>Usman Gill</h2>
+        </div>
+        <ul class="sidebar-menu">
+            <li><a href="#"><i class="fas fa-image"></i> Gallery</a></li>
+            <li><a href="#"><i class="fas fa-link"></i> Shortcuts</a></li>
+            <li><a href="#"><i class="fas fa-landmark"></i> Exhibits</a></li>
+            <li><a href="#"><i class="fas fa-calendar-alt"></i> Events</a></li>
+            <li><a href=""><i class="fas fa-store"></i> Store</a></li>
+            <li><a href=""><i class="fas fa-envelope"></i> Contact Us</a></li>
+            <li><a href="#"><i class="fas fa-comments"></i> Feedback</a></li>
+        </ul>
+        <div class="sidebar-footer">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+    <div class="content">
+        <img src="camera image.avif" alt="Camera Image" class="background-image">
+    </div>
+</body>
+</html>
